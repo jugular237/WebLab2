@@ -1,0 +1,107 @@
+body{
+    justify-content: space-between;
+}
+.top, .bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.leftBlock{
+    width: 20vw;
+}
+.rightBlock{
+    width: 73vw;
+}
+.leftDiv1{
+    min-height: 80vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    background-color:bisque;
+    text-align: center;
+    height: 100%;
+}
+
+.rightDiv2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    min-height: 20vh;
+    text-align: right;
+    background-color: rgb(112, 160, 232);
+}
+
+.rightDiv3{
+    padding-left: 1vw;
+    padding-right: 1vw;
+    min-height: 60vh;
+    text-align: center;
+    background-color: rgb(155, 200, 225);
+    height: 100%;
+}
+
+.leftDiv4{
+    min-height: 20vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    text-align: center;
+    background-color: rgb(120, 210, 120);
+    height: 100%;
+}
+
+.rightDiv5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    word-wrap:break-word;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    min-height: 20vh;
+    text-align: left;
+    background-color: rgb(112, 160, 232);
+    height: 100%;
+}
+
+.rightDiv5 div{
+    width: 70vw;
+}
+
+.menulist{
+    margin-top: 1px;
+    width: 50vw;
+}
+
+.menulist li{
+    list-style-type: none;
+    padding-top: 1vh;
+}
+
+.menulist li a{
+    font-size: 20px;
+    background-color: rgb(243, 209, 75);
+    border-right: 5px solid rgb(111, 13, 13);
+}
+
+#topHeader {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    float: left;
+    width: 21vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(80, 36, 36);
+    opacity: 0.9;
+}
+
+#bottomHeader{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    float: right;
+    width: 27vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(80, 36, 36);
+    opacity: 0.9;
+}

@@ -1,0 +1,113 @@
+body{
+    display: table;
+}
+.top, .bottom{
+    display: table-row;
+}
+
+.whiteBlock{
+    background-color: white;
+    width: 5vw;
+    display: block;
+}
+.leftDiv1{
+    display: table-cell;
+    width: 20vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 10px;
+    vertical-align: top;
+    height: 80vh;
+    background-color:bisque;
+    text-align: center;
+}
+
+.leftDiv1 div{
+    margin-top: -10px;
+}
+
+.rightColumn{
+    display: table-cell;
+    width: 71vw;
+    height: 60vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    background-color: rgb(155, 200, 225);
+}
+
+
+.rightDiv2{
+    width: 71vw;
+    height: 20vh;
+    margin-left: -1vw;
+    margin-right: -1vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    background-color: rgb(112, 160, 232);
+}
+
+
+.leftDiv4{
+    display: table-cell;
+    width: 20vw;
+    height: 20vh;
+    text-align: center;
+    background-color: rgb(120, 210, 120);
+}
+
+.rightDiv5{
+    display: table-cell;
+    vertical-align: middle;
+    width: 71vw;
+    height: 20vh;
+    padding-left: 1vw;
+    padding-right: 1vw;   
+    text-align: left;
+    background-color: rgb(112, 160, 232);
+}
+
+.rightDiv5 div{
+    display: table-cell;
+    width: 55vw;
+}
+
+.menulist{
+    text-align: right;
+    margin-top: 1px;
+    padding-top: 3vh;
+    margin-left: 13vw;
+}
+
+.menulist li{
+    list-style-type: none;
+    padding-top: 1vh;
+}
+
+.menulist li a{
+    font-size: 20px;
+    background-color: rgb(243, 209, 75);
+    border-right: 5px solid rgb(111, 13, 13);
+}
+
+#topHeader {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: -12vh;
+    width: 20vw;
+    height: 10vh;
+    line-height: 10vh;
+    text-align: center;
+    background-color: rgb(80, 36, 36);
+    opacity: 0.9;
+}
+
+#bottomHeader{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: table-cell;
+    width: 20vw;
+    height: 10vh;
+    line-height: 10vh;
+    text-align: center;
+    background-color: rgb(80, 36, 36);
+    opacity: 0.9;
+}
+

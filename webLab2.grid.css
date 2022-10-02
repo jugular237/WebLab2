@@ -1,0 +1,116 @@
+body{
+    display: grid;
+    grid-template-areas: 
+    "leftColumn topHeader topHeader"
+    "leftColumn middleSection middleSection"
+    "leftColumn middleSection middleSection"
+    "leftFooter rightFooter rightFooter";
+    grid-template-rows: 20vh repeat(auto-fill, minmax(20vh, 1fr));
+    grid-template-columns: 20vw repeat(auto-fill, minmax(65vw, 65vw));
+    column-gap: 5%;
+}
+
+
+.leftDiv1{
+    grid-area: leftColumn;
+    min-height: 80vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    background-color:bisque;
+    text-align: center;
+ }
+
+.rightDiv2{
+    grid-area: topHeader;
+    grid-auto-rows: minmax(20vh, 20vh);
+    display: grid;
+    grid-template-areas:
+    "header menuList";
+    align-items: center;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    min-height: 20vh;
+    max-height: 0;
+    text-align: right;
+    background-color: rgb(112, 160, 232);
+}
+
+.rightDiv3{
+    grid-area: middleSection;
+    grid-auto-flow: column dense;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    min-height: 60vh;
+    text-align: center;
+    background-color: rgb(155, 200, 225);
+}
+
+.leftDiv4{
+    grid-area: leftFooter;
+    min-height: 20vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    text-align: center;
+    background-color: rgb(120, 210, 120);
+}
+
+.rightDiv5{
+    grid-area: rightFooter;
+    display: grid;
+    grid-template-areas:
+    "rightFooterText rightFooterText footer";
+    align-items: center;    
+    padding-left: 1vw;
+    padding-right: 1vw;
+    min-height: 20vh;
+    text-align: left;
+    background-color: rgb(112, 160, 232);
+}
+
+.rightDiv5 div{
+    grid-area: rightFooterText;
+    width: 45vw;
+}
+
+.menulist{
+    grid-area: menuList;
+    margin-top: 1px;
+    margin-left: 20vw;
+}
+
+.menulist li{
+    list-style-type: none;
+    padding-top: 1vh;
+}
+
+.menulist li a{
+    font-size: 20px;
+    background-color: rgb(243, 209, 75);
+    border-right: 5px solid rgb(111, 13, 13);
+}
+
+#topHeader {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 20vw;
+    height: 10vh;
+    line-height: 10vh;
+    grid-area: header;
+    justify-self: start;
+    text-align: center;
+    background-color: rgb(80, 36, 36);
+    opacity: 0.9;
+}
+
+#bottomHeader{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 5vw;
+    width: 20vw;
+    height: 10vh;
+    line-height: 10vh;
+    grid-area: footer;
+    justify-self: end;
+    text-align: center;
+    background-color: rgb(80, 36, 36);
+    opacity: 0.9;
+}
+
